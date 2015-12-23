@@ -1,0 +1,8 @@
+version: "2"
+
+services:
+  workstation-0:
+    image: registry.training.local/workstation-0:${IMAGE_VERSION}
+    network_mode: bridge
+    ports:
+      - "80:4567"
