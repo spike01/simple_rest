@@ -4,5 +4,7 @@ services:
   workstation-0:
     image: registry.training.local/workstation-5:${IMAGE_VERSION}
     network_mode: bridge
+    environment:
+      - "SERVICE_NAME=spike"
     ports:
       - "4567"
